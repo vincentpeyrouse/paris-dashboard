@@ -1,0 +1,221 @@
+@import url('https://www.fontify.me/wf/53468576262856c3555213c3f28c8d1a');
+
+.row-no-padding > [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+body {
+  background-color: #9197a3;
+}
+
+header {
+  background-color: white;
+  position: relative;
+}
+
+#station-name {
+  background-color: #0d00a2;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  font-family: font89051;
+  font-weight: bold;
+  font-size: 1.25em;
+  margin: 15px 0;
+  padding: 5px 15px;
+}
+
+#timer {
+  background-color: black;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #ffe016;
+  font-family: font89051;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 10px 15px;
+  position: absolute;
+  right: 15px;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  #station-name {
+    font-size: 1.5em;
+  }
+
+  #timer {
+    font-size: 1.75em;
+  }
+}
+
+#timer-points {
+  position: relative;
+  -moz-animation: timer-animation 2s ease infinite;
+  -webkit-animation: timer-animation 2s ease infinite;
+  animation: timer-animation 2s ease infinite;
+}
+
+@keyframes timer-animation {
+  0% {
+    opacity: 1.0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@-webkit-keyframes timer-animation {
+  0% {
+    opacity: 1.0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@-moz-keyframes timer-animation {
+  0% {
+    opacity: 1.0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  #next-journeys {
+    padding-right: 10px;
+  }
+}
+
+.shadow {
+  -moz-box-shadow: 0px 4px 5px 1px #0d00a2;
+  -webkit-box-shadow: 0px 4px 5px 1px #0d00a2;
+  -o-box-shadow: 0px 4px 5px 1px #0d00a2;
+  box-shadow: 0px 4px 5px 1px #0d00a2;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#0d00a2, Direction=180, Strength=5);
+  background-color: #0d00a2;
+  height: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.arrows {
+  position: absolute;
+  right: 15px;
+  top: -7px;
+}
+
+.arrow {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid white;
+  display: inline-block;
+  height: 0;
+  width: 0;
+  margin: 0 1em;
+}
+
+.line {
+  margin-top: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.line-direction {
+  background-color: white;
+  border-top: 1px solid lightgray;
+  overflow: hidden;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.line-direction:first-child {
+  border-top: none;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .line-direction:first-child {
+    border-top-right-radius: 3px;
+  }
+
+  .line-direction:last-child {
+    border-bottom-right-radius: 3px;
+  }
+}
+
+.line-type {
+  display: none;
+}
+
+.line-type .type {
+  position: absolute;
+  top: -5px;
+  left: 0px;
+  width: 35px;
+  height: 35px;
+  opacity: 0.5;
+}
+
+.line-type .line {
+  position: absolute;
+  top: -9px;
+  left: 25px;
+  width: 35px;
+  height: 35px;
+}
+
+.line-direction:first-child .line-type {
+  display: inline-block;
+}
+
+.direction-name {
+  color: #0d00a2;
+  display:inline-block;
+  font-family: font89051;
+  font-weight: bold;
+  font-size: 2em;
+  margin-left: 50px;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  max-width: 80%;
+}
+
+.direction-timers {
+  position: absolute;
+  right: 15px;
+}
+
+.first-timer, .second-timer {
+  background-color: black;
+  border-radius: 5px;
+  color: #ffe016;
+  display: inline-block;
+  font-family: font89051;
+  font-weight: bold;
+  font-size: 1.75em;
+  padding: 2px 0px;
+  text-align: center;
+  width: 2em;
+}
