@@ -100,11 +100,11 @@ header {
 }
 
 .shadow {
-  -moz-box-shadow: 0px 4px 5px 1px #0d00a2;
-  -webkit-box-shadow: 0px 4px 5px 1px #0d00a2;
-  -o-box-shadow: 0px 4px 5px 1px #0d00a2;
-  box-shadow: 0px 4px 5px 1px #0d00a2;
-  filter:progid:DXImageTransform.Microsoft.Shadow(color=#0d00a2, Direction=180, Strength=5);
+  -moz-box-shadow: 0px 5px 5px 1px rgba(65, 65, 66, 0.87);
+  -webkit-box-shadow: 0px 5px 5px 1px rgba(65, 65, 66, 0.87);
+  -o-box-shadow: 0px 5px 5px 1px rgba(65, 65, 66, 0.87);
+  box-shadow: 0px 5px 5px 1px rgba(65, 65, 66, 0.87);
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#414142, Direction=180, Strength=5);
   background-color: #0d00a2;
   height: 10px;
   position: relative;
