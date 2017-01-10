@@ -1,6 +1,6 @@
 {
   "name": "paris-dashboard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A dashboard to view next journeys at a transport station in Paris",
   "main": "index.js",
   "scripts": {

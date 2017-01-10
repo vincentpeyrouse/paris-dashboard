@@ -37,9 +37,9 @@ function eachSecondEvent() {
 function parseSchedule(schedule) {
   switch (schedule) {
     case -1: //"Train a l'approche"
-      return "--";
+      return '<i class="fa fa-train animated"></i>';
     case -2: //"Train a quai"
-      return "--";
+      return '<i class="fa fa-train"></i>';
     case -3: //"Service termine"
       return "..";
     case -4: //"Train retarde"

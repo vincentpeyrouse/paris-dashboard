@@ -44,6 +44,13 @@ function parseSchedule(schedule, callback) {
       break;
     default:
       var matches = schedule.message.match(/(\d+) mn/i);
+      if (typeof matches === 'undefined' || !matches) {
+        //Unhandled case
+        console.log(schedule.message);
+        callback(null, -42);
+        return;
+      }
+
       callback(null, parseInt(matches[1]));
   }
 }
